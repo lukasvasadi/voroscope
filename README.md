@@ -4,6 +4,7 @@ Source code for the Voroscope server and client projects.
 ## Contents
 * [Server](#server)
 * [Client](#client)
+* [Helpful Links](#helpful-links)
 
 ## Server
 Server code is based on the picamera module for controlling the Raspberry Pi camera module, and the websockets module for transmitting data over a remote connection.
@@ -15,3 +16,6 @@ To run the app in development mode:
 ```bash
 yarn electron:start
 ```
+
+## Helpful Links
+* [Fontawesome for React](https://fontawesome.com/v5/docs/web/use-with/react)

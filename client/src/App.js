@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Toolbar from './components/Toolbar'
+import Status from './components/Status'
+import Camera from './components/Camera'
+import Controls from './components/Controls'
+import { useEffect, useState } from 'react'
 
 function App() {
+  const [status, setStatus] = useState('disconnected')
+  const [image, setImage] = useState(process.env.PUBLIC_URL + '/images/cells.jpg')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Toolbar />
+      <Status status={status} />
+      <main>
+        <Camera image={image} />
+        <Controls />
+      </main>
     </div>
-  );
+  )
 }
 
 export default App;

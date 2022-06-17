@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 const Status = ({ status }) => {
     return (
-        <div className='statusbar'>
-            <h3>Status: <span style={{ color: status === 'connected' ? 'green' : 'red'}}>{status}</span></h3>
-        </div>
+        <footer className='statusbar'>
+            <p style={{ color: status === 'connected' ? 'green' : '#800000'}}>{status}</p>
+        </footer>
     )
 }
 

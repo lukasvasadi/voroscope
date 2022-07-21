@@ -5,7 +5,7 @@ import Camera from './components/Camera'
 import Controls from './components/Controls'
 import { useEffect, useState } from 'react'
 import { w3cwebsocket as W3CWebSocket } from "websocket"
-import { Buffer } from 'buffer';
+// import { Buffer } from 'buffer'
 
 const ENDPOINT = 'ws://localhost:8765'
 

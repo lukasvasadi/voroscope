@@ -6,14 +6,13 @@ import websockets
 from PIL import Image
 
 
-stream = io.BytesIO()
-test_image = Image.open(
-    "C:\\Users\\lukas\\Code\\voroscope-beta\\client\\public\\images\\cells.jpg"
-)
+IMG_PATH_WIN = "C:\\Users\\lukas\\Code\\voroscope\\client\\public\\images\\cells.jpg"
+IMG_PATH_MAC = "/Users/lukasvasadi/Code/voroscope/client/public/images/cells.jpg"
 
-with open(
-    "C:\\Users\\lukas\\Code\\voroscope-beta\\client\\public\\images\\cells.jpg", "rb"
-) as image:
+stream = io.BytesIO()
+test_image = Image.open(IMG_PATH_MAC)
+
+with open(IMG_PATH_MAC, "rb") as image:
     encoded_string = base64.b64encode(image.read())
     # print(encoded_string.encode("utf-8"), type(encoded_string))
 

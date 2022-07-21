@@ -1,3 +1,4 @@
 node_modules
 .vscode
+.python-version
 *.log
